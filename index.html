@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div id="date"></div>
+        </div>
+        <div class="content">
+            <ul id="list">
+
+            </ul>
+            <form class="content" id="username-form">
+                <input type="text" id="username-input" placeholder="Enter username" required>
+                <button type="submit">Login</button>
+            </form>
+        
+            <form id="task-form" style="display: none;">
+                <input type="text" id="input" placeholder="Add a to-do" required>
+                <label for="priority">Priority: </label>
+                <select id="priority">
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+                </select>
+                <label for="due-date">Due Date: </label>
+                <input type="date" id="due-date">
+                <button type="submit">Add</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
